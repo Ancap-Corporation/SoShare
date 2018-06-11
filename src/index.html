@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SoShare - Social Media Content Sharing Tool</title>
+  <meta name="description" content="SoShare is social media content sharing tool">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" crossorigin="anonymous ">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/soshare.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">SoShare – Example | Content Sharing Plugin</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <h3>Example - Select text and share using SoShare.</h3><br/>
+      <h4>Source: https://en.wikipedia.org/wiki/Battle_of_Hastings</h4><br/><br/>
+      <p class="flow-text share">
+        The background to the battle was the death of the childless King Edward the Confessor in January 1066, which set up a succession struggle between several claimants to his throne. Harold was crowned king shortly after Edward's death, but faced invasions by William, his own brother Tostig, and the Norwegian King Harald Hardrada (Harold III of Norway). Hardrada and Tostig defeated a hastily gathered army of Englishmen at the Battle of Fulford on 20 September 1066, and were in turn defeated by Harold at the Battle of Stamford Bridge five days later. The deaths of Tostig and Hardrada at Stamford Bridge left William as Harold's only serious opponent. While Harold and his forces were recovering, William landed his invasion forces in the south of England at Pevensey on 28 September 1066 and established a beachhead for his conquest of the kingdom. Harold was forced to march south swiftly, gathering forces as he went.
+        <br/><br/>
+
+        The exact numbers present at the battle are unknown; modern estimates are around 10,000 for William and about 7,000 for Harold. The composition of the forces is clearer; the English army was composed almost entirely of infantry and had few archers, whereas only about half of the invading force was infantry, the rest split equally between cavalry and archers. Harold appears to have tried to surprise William, but scouts found his army and reported its arrival to William, who marched from Hastings to the battlefield to confront Harold. The battle lasted from about 9 am to dusk. Early efforts of the invaders to break the English battle lines had little effect; therefore, the Normans adopted the tactic of pretending to flee in panic and then turning on their pursuers. Harold's death, probably near the end of the battle, led to the retreat and defeat of most of his army. After further marching and some skirmishes, William was crowned as king on Christmas Day 1066.
+        <br/><br/>
+
+        There continued to be rebellions and resistance to William's rule, but Hastings effectively marked the culmination of William's conquest of England. Casualty figures are hard to come by, but some historians estimate that 2,000 invaders died along with about twice that number of Englishmen. William founded a monastery at the site of the battle, the high altar of the abbey church supposedly placed at the spot where Harold died.
+        <br/><br/>
+      </p>
+    </div>
+  </div>
+  <footer class="page-footer orange">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="http://ancap.in">Ancap Corporation</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../node_modules/modernizr/src/Modernizr.js" crossorigin="anonymous"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/nsoshare.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script>
+    //Initialize social share plugin
+      $(".share").soShare({
+          "facebook": true,
+          "twitter": true,
+          "linkedin": true,
+          "twitterAccount": "twitterAccount", //Twitter Account to appear in @via
+          "selectorName": "share", //Share [Selector]
+          "tumblr": true,
+          "digg": true,
+          "buffer": true,
+          "reddit": true,
+          "stumbleupon": true,
+          "sanitize": true //Clean text before sharing it
+      });
+  </script>
+</body>
+
+</html>
