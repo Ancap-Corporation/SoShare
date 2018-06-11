@@ -1,6 +1,6 @@
 # SoShare - Social Media Content Sharing Plugin [jQuery Version]  
 SoShare is medium.com-esque social media "select-and-share" plugin. It is lightweight fast.  
-![alt text](https://imgur.com/a/lwbUjcI)  
+![SoShare](https://i.imgur.com/dCrQIJl.png)  
 
 ## Features
 
